@@ -38,8 +38,8 @@
 #define HEIGHT 64
 #endif
 
-#define WIFI_SSID "CHRISTIAAN NET_2.4"
-#define WIFI_PASS "24nu4agq@@"
+#define WIFI_SSID "SEU SSID"
+#define WIFI_PASS "SUA SENHA"
 
 
 // Matriz de led's
@@ -436,6 +436,7 @@ void vTaskMatriz(void *pvParameters) {
         vTaskDelay(pdMS_TO_TICKS(500));
     }
 }
+
 void init_led(int gpio) {
     gpio_init(gpio);
     gpio_set_dir(gpio,GPIO_OUT);
